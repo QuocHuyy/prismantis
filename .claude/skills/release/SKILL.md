@@ -12,7 +12,7 @@ description: Cut a prismantis release - version bump, changelog, verify, tag and
 5. **Verify:** run every step in AGENTS.md Verify, plus `live-check` of `/prismantis demo` and `/prismantis demo-rtl`, reading every Hebrew line right to left.
 6. **Fresh install test** against a throwaway config:
    ```
-   CLAUDE_CONFIG_DIR=<scratch>/fresh claude plugin marketplace add NahumLitvin/prismantis
+   CLAUDE_CONFIG_DIR=<scratch>/fresh claude plugin marketplace add QuocHuyy/prismantis
    CLAUDE_CONFIG_DIR=<scratch>/fresh claude plugin install prismantis@prismantis
    CLAUDE_CONFIG_DIR=<scratch>/fresh claude plugin list
    ```
@@ -21,4 +21,3 @@ description: Cut a prismantis release - version bump, changelog, verify, tag and
 8. **Tag main:** `git tag vX.Y.Z <merge commit> && git push origin vX.Y.Z`. The `release` workflow checks the tag against `plugin.json`, checks the tag is on `main`, and publishes the GitHub release from the CHANGELOG section.
 9. **Pin the release:** a second PR sets `ref` to `vX.Y.Z` and `sha` to the tagged commit in the `source` of `.claude-plugin/marketplace.json`, then runs `npm --prefix scripts run build:codex` so `.agents/plugins/marketplace.json`, the Codex copy with a git `url` source, follows. Until it merges, installs keep getting the previous release.
 10. **Confirm** CI and the release workflow are green, then run the fresh install test and check `claude plugin list` shows the new version.
-11. **Blog:** in `~/git/nahum-writing`, update the "What it draws today" section of `posts/2026-10-02-prismantis/article.md` (version, date, features, counts, limits) and any number in the opening paragraph, then release the blog per its AGENTS.md. Skip when the clone is missing and say so.

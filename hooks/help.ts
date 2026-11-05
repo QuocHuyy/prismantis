@@ -12,7 +12,7 @@ export const HINT = [
 export const showcaseText = (themes: readonly string[]): string => `
 # prismantis
 
-Colored markdown for Claude Code replies: **bold**, *italic*, ~~struck~~, \`inline code\`, a [link](https://github.com/NahumLitvin/prismantis) and a bare URL https://github.com/NahumLitvin/prismantis/issues, both clickable, numbers like 99.9% and 250ms, paths like ~/src/app.ts.
+Colored markdown for Claude Code replies: **bold**, *italic*, ~~struck~~, \`inline code\`, a [link](https://github.com/QuocHuyy/prismantis) and a bare URL https://github.com/QuocHuyy/prismantis/issues, both clickable, numbers like 99.9% and 250ms, paths like ~/src/app.ts.
 
 Paths like ~/src/app.ts, ./README.md and /tmp/app.ts open on click in a terminal that draws hyperlinks, and so does a local link that shows its own path, like [/tmp/notes.md](file:///tmp/notes.md), while slash commands like /config stay text. A local link with any other name, like [notes](file:///tmp/notes.md), draws as its name and target, so it cannot hide where a click goes.
 
@@ -22,7 +22,7 @@ Programs and launchers stay plain text, so a click never runs one: ./install.sh,
 
 Obsidian links that open a note open on click, like [a note](obsidian://open?vault=notes&file=todo), while one that writes, like [a new note](obsidian://new?vault=notes&name=x&content=y), and other app links like [diagnostics](ms-msdt:/id) stay text.
 
-Code-shaped prose stays as written: f(*args, **kwargs), a link with parentheses [Foo_(bar)](https://en.wikipedia.org/wiki/Foo_(bar)), a file link [\`render.tsx\`](https://github.com/NahumLitvin/prismantis/blob/main/hooks/render.tsx) and **bold with *italic* inside**.
+Code-shaped prose stays as written: f(*args, **kwargs), a link with parentheses [Foo_(bar)](https://en.wikipedia.org/wiki/Foo_(bar)), a file link [\`render.tsx\`](https://github.com/QuocHuyy/prismantis/blob/main/hooks/render.tsx) and **bold with *italic* inside**.
 
 ## Commands
 
@@ -283,7 +283,7 @@ export const helpText = (themes: readonly string[]): string => `
 - Light: ${themes.filter(t => /latte|light|dawn/.test(t)).join(', ')}
 - Plain: mono, no color, only bold and dim
 
-Docs and issues: https://github.com/NahumLitvin/prismantis
+Docs and issues: https://github.com/QuocHuyy/prismantis
 
 > [!TIP]
 > Any color slot beats the theme. Set \`headingColor\` or \`numberColor\` to a hex value in \`/config\`.
@@ -317,7 +317,7 @@ xychart-beta
 export const rtlShowcaseText = (): string => `
 # עברית מימין לשמאל
 
-**שלום חברים**, זו הדגמה של עברית עם מונחים באנגלית כמו \`kubectl\`, מספרים כמו 99.9% ו-250ms, נתיב כמו ~/src/app.ts וגם [קישור](https://github.com/NahumLitvin/prismantis).
+**שלום חברים**, זו הדגמה של עברית עם מונחים באנגלית כמו \`kubectl\`, מספרים כמו 99.9% ו-250ms, נתיב כמו ~/src/app.ts וגם [קישור](https://github.com/QuocHuyy/prismantis).
 
 ## רשימות
 
@@ -359,7 +359,7 @@ export const NARROW_PANE = 100
 export const narrowHint = (columns: number): string =>
   `This terminal pane is ${columns} columns wide, and a diagram wider than the pane draws as its source. Keep diagrams narrow: flowchart TD, never LR, node and edge labels of 1 to 3 words, at most 3 boxes side by side, and at most 3 sequence diagram participants.`
 
-export const ISSUE_HINT = 'If the user says prismantis drew something wrong, offer (ask first) a minimal repro issue at https://github.com/NahumLitvin/prismantis/issues.'
+export const ISSUE_HINT = 'If the user says prismantis drew something wrong, offer (ask first) a minimal repro issue at https://github.com/QuocHuyy/prismantis/issues.'
 const KOREAN_SHOWCASE = `
 ## 한국어
 

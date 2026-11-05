@@ -1,7 +1,7 @@
-/.github/ @NahumLitvin
-/.claude-plugin/ @NahumLitvin
-/scripts/ @NahumLitvin
-/hooks/vendor/ @NahumLitvin
-/hooks/register.tsx @NahumLitvin
-/hooks/clipboard.ts @NahumLitvin
-/hooks/latex.ts @NahumLitvin
+/.github/ @QuocHuyy
+/.claude-plugin/ @QuocHuyy
+/scripts/ @QuocHuyy
+/hooks/vendor/ @QuocHuyy
+/hooks/register.tsx @QuocHuyy
+/hooks/clipboard.ts @QuocHuyy
+/hooks/latex.ts @QuocHuyy
