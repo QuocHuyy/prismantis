@@ -3,9 +3,9 @@
 <p align="center"><em>Sees 16 colors. Your terminal only had 8.</em></p>
 
 <p align="center">
-  <a href="https://github.com/NahumLitvin/prismantis/releases"><img src="https://img.shields.io/github/v/release/NahumLitvin/prismantis?style=flat-square&color=cba6f7" alt="Release"></a>
-  <a href="https://github.com/NahumLitvin/prismantis/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/NahumLitvin/prismantis/ci.yml?branch=main&style=flat-square&label=ci" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/NahumLitvin/prismantis?style=flat-square&color=cba6f7" alt="License"></a>
+  <a href="https://github.com/QuocHuyy/prismantis/releases"><img src="https://img.shields.io/github/v/release/QuocHuyy/prismantis?style=flat-square&color=cba6f7" alt="Release"></a>
+  <a href="https://github.com/QuocHuyy/prismantis/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/QuocHuyy/prismantis/ci.yml?branch=main&style=flat-square&label=ci" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/QuocHuyy/prismantis?style=flat-square&color=cba6f7" alt="License"></a>
   <img src="https://img.shields.io/badge/Claude%20Code-2.1.287%2B-cba6f7?style=flat-square" alt="Claude Code 2.1.287 or later">
   <a href="https://github.com/hesreallyhim/awesome-claude-code"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome Claude Code"></a>
   <a href="https://statuslin.es/mods/prismantis"><img src="https://img.shields.io/badge/listed%20on-statuslin.es-c96442?style=flat-square" alt="Listed on statuslin.es"></a>
@@ -31,7 +31,7 @@
 - No network calls. It runs a program only when you click `⧉ html` or `▣ png` (the clipboard helper) or turn on LaTeX (RaTeX's renderer).
 
 ```
-/plugin marketplace add NahumLitvin/prismantis
+/plugin marketplace add QuocHuyy/prismantis
 ```
 
 ```
@@ -461,7 +461,7 @@ A color is hex (`#a6e3a1`, `#fc0`), `rgb(166,227,161)`, `ansi256(114)` or a name
 To change the code, read [AGENTS.md](AGENTS.md) instead.
 
 - **What it is:** a Claude Code mod (function hooks in TypeScript) that redraws assistant replies, slash-command output, tool rows, the turn footer and user prompts. It changes how things look, and with `diagramHints` on (the default) it also asks Claude to build a reply around pictures when they make it easier to grasp, with the core on the first screen as a picture or a sentence. The one thing it sends the model is the optional diagram hint below.
-- **Install:** `/plugin marketplace add NahumLitvin/prismantis`, then `/plugin install prismantis@prismantis`. Needs Claude Code 2.1.287+. Changes apply after `/reload`.
+- **Install:** `/plugin marketplace add QuocHuyy/prismantis`, then `/plugin install prismantis@prismantis`. Needs Claude Code 2.1.287+. Changes apply after `/reload`.
 - **Configure:** `/prismantis theme <name>` and `/prismantis setup` set options at runtime. Every option is a key under `pluginConfigs["prismantis@prismantis"].options` in `~/.claude/settings.json` (or a row in `/config`), then `/reload`. Options and defaults are in the [Configure](#configure) table; the machine-readable source is `userConfig` in [.claude-plugin/plugin.json](.claude-plugin/plugin.json). Color values that don't parse are ignored.
 - **Side effects:** no network. Programs it runs: the `⧉ html` and `▣ png` clipboard helper (`/usr/bin/osascript` on macOS, `powershell.exe` on Windows, `copyq` on Linux for `⧉ html` only, 5 second timeout, 15 on Windows, only on a click), and `ratex-render` while `latex` is on. With `diagramHints` on, it adds about 630 tokens of model-only context (about 710 while `latex` is on) to each prompt you type and each prompt another plugin sends, as broken down under [Diagram hints](#diagram-hints).
 - **Turning it off:** `"enabled": false`, or disable the plugin in `/plugin`. To keep it in one app only, like the terminal but not the desktop app, set `"surfaces": "terminal"`.
@@ -471,12 +471,12 @@ To change the code, read [AGENTS.md](AGENTS.md) instead.
 
 ## Roadmap
 
-Planned features are on the [roadmap board](https://github.com/users/NahumLitvin/projects/2), one issue each. Give an issue a 👍 to vote for it, or open one for what you miss.
+Planned features are tracked as [issues](https://github.com/QuocHuyy/prismantis/issues), one each. Give an issue a 👍 to vote for it, or open one for what you miss.
 
 ## Develop
 
 ```bash
-git clone https://github.com/NahumLitvin/prismantis
+git clone https://github.com/QuocHuyy/prismantis
 claude --plugin-dir ./prismantis
 ```
 
@@ -513,6 +513,8 @@ declare module 'claude-code' {
 ## Author
 
 Built by [Nahum Litvin](https://github.com/NahumLitvin), who writes about running untrusted code in production at [catchkill9.dev](https://www.catchkill9.dev/).
+
+This fork is maintained by [QuocHuyy](https://github.com/QuocHuyy). The original project is [NahumLitvin/prismantis](https://github.com/NahumLitvin/prismantis).
 
 ## License
 

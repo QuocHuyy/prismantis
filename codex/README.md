@@ -9,7 +9,7 @@ Codex has no way for a plugin to redraw replies, so prismantis in Codex does two
 ## Install
 
 ```bash
-codex plugin marketplace add NahumLitvin/prismantis && codex plugin add prismantis@prismantis
+codex plugin marketplace add QuocHuyy/prismantis && codex plugin add prismantis@prismantis
 ```
 
 Trust its hook once in `/hooks`, run `$prismantis-themes` to install the themes, and pick one with `/theme`. `$prismantis` prints the demo.

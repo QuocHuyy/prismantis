@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Please report it privately: [open a security advisory](https://github.com/NahumLitvin/prismantis/security/advisories/new). Do not open a public issue, since the fix is not out yet. I aim to answer within a week and credit the report in the release notes, unless you ask me not to.
+Please report it privately: [open a security advisory](https://github.com/QuocHuyy/prismantis/security/advisories/new). Do not open a public issue, since the fix is not out yet. I aim to answer within a week and credit the report in the release notes, unless you ask me not to.
 
 ## What counts
 

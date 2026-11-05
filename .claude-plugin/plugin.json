@@ -3,11 +3,11 @@
   "version": "0.42.0",
   "description": "Colorful, themeable rendering for Claude Code replies: tables, headings, code, numbers, paths and links.",
   "author": {
-    "name": "Nahum Litvin",
-    "url": "https://github.com/NahumLitvin"
+    "name": "QuocHuyy",
+    "url": "https://github.com/QuocHuyy"
   },
-  "homepage": "https://github.com/NahumLitvin/prismantis",
-  "repository": "https://github.com/NahumLitvin/prismantis",
+  "homepage": "https://github.com/QuocHuyy/prismantis",
+  "repository": "https://github.com/QuocHuyy/prismantis",
   "license": "MIT",
   "keywords": [
     "mod",
